@@ -1,0 +1,15 @@
+.boxRed{
+    width:100px;
+    height:100px;
+   background: red;
+}
+
+.boxBlue{
+    width:100px;
+    height:100px;
+    background:blue;
+}
+
+#container{
+    width:1200px;
+}
