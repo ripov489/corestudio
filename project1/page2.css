@@ -1,3 +1,13 @@
+.square {
+	width: 20px;
+	height: 50px;
+	background: transparent;
+	top: 0px;
+	right: 0px;
+	display: block;
+	position: absolute;
+	z-index: 10;
+}
 .paragraph1{
     font-size: 16px;
     font-family: helvetica;
@@ -15,15 +25,20 @@
     -webkit-column-gap: 100px; /* Chrome, Safari, Opera */
     column-gap: 100px;
 }
-
+#fpc_effect-back {
+background-color: transparent; /* some background color to match corner inside's */
+width: 100%;/* trivial */
+font: 12pt arial,sans-serif,helvetica,verdana;/* trivial */ 
+color: transparent;
 }
+
 #fpc_effect-back * {
 	box-sizing: border-box;
 }
 #fpc_box {
 	width: 100%;/*any relative or absolute*/
-	position: relative;
-	background-color: #FFF;
+	position: absolute;
+	background-color: transparent;
 }
 #fpc_content {
 		padding: 20px;
@@ -35,7 +50,7 @@
 	float: right;
 }
 #fpc_page-tip:before, #fpc_page-tip:after {
-	background-color: #FFF;
+	background-color: transparent;
 	position: absolute;
 	display: block;
 	z-index: 2;
@@ -50,10 +65,10 @@
 	background: -webkit-radial-gradient(-180% 200%, circle, rgba(255,255,255,0) 80%, rgba(0,0,0,.2) 100%);
 }
 #fpc_box:hover #fpc_page-tip:before {
-	border-right: solid 1px #fff;
+	border-right: solid 1px transparent;
 }
 #fpc_box div#fpc_corner-box:hover #fpc_page-tip:before {
-	border-right: solid 2px #fff;
+	border-right: solid 2px transparent;
 }
 #fpc_page-tip:after {
 	top: 100%;
@@ -61,10 +76,10 @@
 	background: -webkit-radial-gradient(-250% 320%, circle, rgba(255,255,255,0) 80%, rgba(0,0,0,.2) 100%);
 }
 #fpc_box:hover #fpc_page-tip:after {
-	border-top: solid 1px #fff;
+	border-top: solid 1px transparent;
 }
 #fpc_box div#fpc_corner-box:hover #fpc_page-tip:after {
-	border-top: solid 2px #fff;
+	border-top: solid 2px transparent;
 }
 #fpc_corner-box {  /* edit these sizes for the default revealing corner size */
 	height: 20px;
@@ -116,8 +131,8 @@
 	width: 7em;
 	top: 0;
 	right: 0;
-	background-color: #900;
-	color: #fff;
+	background-color: transparent;
+	color: transparent;
 	font-family: Verdana, Geneva, sans-serif;
 	text-align: center;
 	padding: 8px 5px;
